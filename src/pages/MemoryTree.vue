@@ -12,8 +12,8 @@
     <div class="memory-layout">
       <div class="memory-main">
         <div class="media-grid">
-          <div class="media-item wide" @click="openImage('https://picsum.photos/seed/family01/600/300', 'memory')">
-          <img src="https://picsum.photos/seed/family01/600/300" class="media-real" alt="memory" @click.stop="lightboxIndex = 0" />
+          <div class="media-item wide" @click="lightboxIndex = 0">
+          <img src="https://picsum.photos/seed/family01/600/300" class="media-real" alt="memory" />
         </div>
         <div class="media-item" @click="lightboxIndex = 1">
           <img src="https://picsum.photos/seed/family02/300/300" class="media-real" alt="memory" />

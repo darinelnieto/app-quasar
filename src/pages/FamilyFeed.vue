@@ -1,6 +1,6 @@
 <template>
   <div class="family-feed-screen">
-    <h2>Open Family</h2>
+    <h2>Family Circle</h2>
     <p class="subtitle">Stay connected with your family's updates</p>
 
     <div class="featured-pair">
@@ -24,7 +24,7 @@
       initials="RL"
       avatar="https://i.pravatar.cc/150?img=12"
       time="2 hours ago"
-      content="Qué tarde tan bonita en el parque con toda la familia. Las tradiciones viven en nosotros."
+      content="What a beautiful afternoon at the park with the whole family. Our traditions keep us close."
       image="https://picsum.photos/seed/park42/800/400"
       :likes="12"
       :comments="3"
@@ -34,7 +34,7 @@
       initials="IG"
       avatar="https://i.pravatar.cc/150?img=25"
       time="5 hours ago"
-      content="Preparando la receta secreta de la abuela María. ¡Quién quiere venir a probarla?"
+      content="Preparing Grandma Maria's secret recipe. Who wants to come and try it?"
       image="https://picsum.photos/seed/kitchen88/800/400"
       :likes="28"
       :comments="8"
@@ -44,7 +44,7 @@
       initials="LL"
       avatar="https://i.pravatar.cc/150?img=47"
       time="Yesterday"
-      content="Mi día en la universidad. Estudiando fuerte para los exámenes finales. ¡Gracias familia por el apoyo!"
+      content="My day at university. Studying hard for final exams. Thanks, family, for all the support!"
       :likes="15"
       :comments="5"
     />

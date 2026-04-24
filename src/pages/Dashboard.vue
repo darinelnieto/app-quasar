@@ -8,10 +8,10 @@
         </div>
 
         <div class="dashboard-grid">
-          <DashboardCard title="Recent Updates" description="María compartió 3 nuevas fotos del parque" icon="camera" />
-          <DashboardCard title="Reminders" description="Cumpleaños de Carlos en 5 días" icon="bell" />
-          <DashboardCard title="My Profile" description="Completa tu perfil familiar al 72%" icon="user" />
-          <DashboardCard title="Active Members" description="8 miembros conectados ahora" icon="users" />
+          <DashboardCard title="Recent Updates" description="Maria shared 3 new photos from the park" icon="camera" />
+          <DashboardCard title="Reminders" description="Carlos' birthday is in 5 days" icon="bell" />
+          <DashboardCard title="My Profile" description="Complete your family profile to 72%" icon="user" />
+          <DashboardCard title="Active Members" description="8 members are online right now" icon="users" />
         </div>
 
         <h3>Upcoming Events</h3>
