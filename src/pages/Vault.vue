@@ -1,44 +1,47 @@
 <template>
   <div class="vault-screen">
-    <h2>Vault - My Private Storage</h2>
-    <p class="subtitle">Your safe and private memories. Decide what to share with your family.</p>
+    <div class="vault-top">
+      <div>
+        <h2>Vault</h2>
+        <p class="subtitle">Your safe and private memories</p>
+      </div>
+      <button class="btn btn-primary">+ Upload</button>
+    </div>
 
-    <button class="btn btn-primary" style="margin-bottom: 24px;">+ Upload Content</button>
+    <div class="storage-bar-wrap">
+      <div class="storage-label">
+        <span>Storage used</span>
+        <span class="storage-num">650 MB / 1 GB</span>
+      </div>
+      <div class="storage-bar">
+        <div class="storage-fill" style="width: 65%;"></div>
+      </div>
+    </div>
 
-    <h3>Content</h3>
+    <div class="filter-tabs">
+      <button class="tab active">All</button>
+      <button class="tab">Photos</button>
+      <button class="tab">Videos</button>
+      <button class="tab">Audio</button>
+      <button class="tab">Docs</button>
+    </div>
+
     <div class="vault-grid">
-      <div class="vault-item">
-        <div class="vault-icon">🖼️</div>
-        <div class="vault-label">120 Photos</div>
-      </div>
-      <div class="vault-item">
-        <div class="vault-icon">🎥</div>
-        <div class="vault-label">24 Videos</div>
-      </div>
-      <div class="vault-item">
-        <div class="vault-icon">🎙️</div>
-        <div class="vault-label">35 Audio</div>
-      </div>
-      <div class="vault-item">
-        <div class="vault-icon">📄</div>
-        <div class="vault-label">18 Documents</div>
+      <div class="vault-thumb" v-for="n in 16" :key="n" @click="lightboxIndex = n - 1">
+        <img :src="`https://picsum.photos/seed/vault${n}/300/300`" :alt="`media ${n}`" class="thumb-img" />
       </div>
     </div>
 
-    <h3 style="margin-top: 24px;">Storage</h3>
-    <div class="card">
-      <div style="margin-bottom: 12px;">
-        <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Storage Used</div>
-        <div style="width: 100%; height: 8px; background-color: rgba(220, 174, 69, 0.1); border-radius: 4px; overflow: hidden;">
-          <div style="width: 65%; height: 100%; background: linear-gradient(90deg, #dcae45, #f0c777);"></div>
-        </div>
-        <div style="font-size: 12px; color: #666666; margin-top: 4px;">650 MB of 1 GB available</div>
-      </div>
-    </div>
+    <ImageLightbox :images="vaultImages" v-model:currentIndex="lightboxIndex" @close="lightboxIndex = -1" />
   </div>
 </template>
 
 <script setup>
+import { ref, computed } from 'vue'
+import ImageLightbox from '../components/common/ImageLightbox.vue'
+
+const lightboxIndex = ref(-1)
+const vaultImages = computed(() => Array.from({ length: 16 }, (_, i) => `https://picsum.photos/seed/vault${i + 1}/300/300`))
 </script>
 
 <style scoped>
@@ -47,36 +50,36 @@
   margin: 0 auto;
 }
 
+.vault-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
 h2 {
   font-family: var(--font-primary);
   font-size: 24px;
   font-weight: 700;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: var(--color-primary);
 }
 
 .subtitle {
   color: #666666;
-  margin-bottom: 24px;
-}
-
-h3 {
-  font-family: var(--font-primary);
-  font-size: 16px;
-  font-weight: 600;
-  margin-bottom: 12px;
-  color: var(--color-primary);
+  font-size: 14px;
 }
 
 .btn {
-  padding: 12px 24px;
+  padding: 10px 20px;
   border: none;
   border-radius: 8px;
   font-family: var(--font-primary);
   font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
-  font-size: 14px;
+  transition: all 0.2s;
+  font-size: 13px;
+  flex-shrink: 0;
 }
 
 .btn-primary {
@@ -86,50 +89,108 @@ h3 {
 
 .btn-primary:hover {
   background-color: #f0c777;
-  transform: translateY(-2px);
+}
+
+.storage-bar-wrap {
+  background: #ffffff;
+  border: 1px solid rgba(220, 174, 69, 0.2);
+  border-radius: 10px;
+  padding: 16px 20px;
+  margin-bottom: 20px;
+}
+
+.storage-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #666666;
+  margin-bottom: 8px;
+}
+
+.storage-num {
+  font-weight: 600;
+  color: var(--color-primary);
+}
+
+.storage-bar {
+  width: 100%;
+  height: 8px;
+  background: rgba(220, 174, 69, 0.15);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.storage-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #dcae45, #f0c777);
+  border-radius: 4px;
+}
+
+.filter-tabs {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 7px 16px;
+  border-radius: 20px;
+  border: 1px solid rgba(220, 174, 69, 0.3);
+  background: #ffffff;
+  font-size: 13px;
+  font-family: var(--font-secondary);
+  color: #666666;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tab:hover {
+  border-color: #dcae45;
+  color: #dcae45;
+}
+
+.tab.active {
+  background: #dcae45;
+  border-color: #dcae45;
+  color: #0c1335;
+  font-weight: 600;
 }
 
 .vault-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-  gap: 16px;
-  margin-bottom: 24px;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
 }
 
-.vault-item {
+.vault-thumb {
   aspect-ratio: 1;
-  background: #ffffff;
-  border: 1px solid rgba(220, 174, 69, 0.2);
-  border-radius: 12px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  border-radius: 10px;
+  overflow: hidden;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.2s;
 }
 
-.vault-item:hover {
-  border-color: #dcae45;
-  transform: translateY(-4px);
-  background: #ffffff;
+.vault-thumb:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-.vault-icon {
-  font-size: 32px;
-  margin-bottom: 8px;
+.thumb-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
 }
 
-.vault-label {
-  font-size: 12px;
-  color: #666666;
-  text-align: center;
-}
+@media (max-width: 768px) {
+  .vault-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 
-.card {
-  background: #ffffff;
-  border: 1px solid rgba(220, 174, 69, 0.2);
-  border-radius: 12px;
-  padding: 24px;
+  .vault-top {
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 </style>

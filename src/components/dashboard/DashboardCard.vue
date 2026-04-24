@@ -5,25 +5,23 @@
         <div class="card-title">{{ title }}</div>
         <div class="card-description">{{ description }}</div>
       </div>
-      <div class="card-icon">{{ icon }}</div>
+      <div class="card-icon">
+        <Camera v-if="icon === 'camera'" :size="28" />
+        <Bell v-else-if="icon === 'bell'" :size="28" />
+        <UserCircle v-else-if="icon === 'user'" :size="28" />
+        <Users v-else-if="icon === 'users'" :size="28" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
+import { Camera, Bell, UserCircle, Users } from 'lucide-vue-next'
+
 defineProps({
-  title: {
-    type: String,
-    required: true
-  },
-  description: {
-    type: String,
-    required: true
-  },
-  icon: {
-    type: String,
-    required: true
-  }
+  title: { type: String, required: true },
+  description: { type: String, required: true },
+  icon: { type: String, required: true }
 })
 </script>
 
@@ -50,7 +48,8 @@ defineProps({
 }
 
 .card-icon {
-  font-size: 32px;
+  color: #dcae45;
+  flex-shrink: 0;
 }
 
 .card-title {

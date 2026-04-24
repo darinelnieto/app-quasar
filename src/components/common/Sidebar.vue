@@ -7,15 +7,15 @@
     <div class="nav-section">
       <div class="nav-label">Main</div>
       <router-link to="/" class="nav-item" :class="{ active: $route.name === 'Dashboard' }">
-        <span class="nav-icon">🏠</span>
+        <LayoutDashboard class="nav-icon" :size="18" />
         <span>Dashboard</span>
       </router-link>
       <router-link to="/profile" class="nav-item" :class="{ active: $route.name === 'Profile' }">
-        <span class="nav-icon">👤</span>
+        <UserCircle class="nav-icon" :size="18" />
         <span>My Profile</span>
       </router-link>
       <router-link to="/family-tree" class="nav-item" :class="{ active: $route.name === 'FamilyTree' }">
-        <span class="nav-icon">🌳</span>
+        <GitFork class="nav-icon" :size="18" />
         <span>Family Tree</span>
       </router-link>
     </div>
@@ -23,15 +23,15 @@
     <div class="nav-section">
       <div class="nav-label">Content</div>
       <router-link to="/journal" class="nav-item" :class="{ active: $route.name === 'Journal' }">
-        <span class="nav-icon">📔</span>
+        <BookOpen class="nav-icon" :size="18" />
         <span>My Journey</span>
       </router-link>
       <router-link to="/family-feed" class="nav-item" :class="{ active: $route.name === 'FamilyFeed' }">
-        <span class="nav-icon">📰</span>
+        <Rss class="nav-icon" :size="18" />
         <span>Family Feed</span>
       </router-link>
       <router-link to="/memory-tree" class="nav-item" :class="{ active: $route.name === 'MemoryTree' }">
-        <span class="nav-icon">🕊️</span>
+        <Heart class="nav-icon" :size="18" />
         <span>Memory Tree</span>
       </router-link>
     </div>
@@ -39,11 +39,11 @@
     <div class="nav-section">
       <div class="nav-label">Private</div>
       <router-link to="/vault" class="nav-item" :class="{ active: $route.name === 'Vault' }">
-        <span class="nav-icon">🔐</span>
+        <Archive class="nav-icon" :size="18" />
         <span>Vault</span>
       </router-link>
       <router-link to="/chat" class="nav-item" :class="{ active: $route.name === 'Chat' }">
-        <span class="nav-icon">💬</span>
+        <MessageCircle class="nav-icon" :size="18" />
         <span>Messages</span>
       </router-link>
     </div>
@@ -51,6 +51,7 @@
 </template>
 
 <script setup>
+import { LayoutDashboard, UserCircle, GitFork, BookOpen, Rss, Heart, Archive, MessageCircle } from 'lucide-vue-next'
 </script>
 
 <style scoped>
@@ -118,7 +119,7 @@
 
 .nav-icon {
   margin-right: 12px;
-  font-size: 18px;
+  flex-shrink: 0;
 }
 
 /* Scrollbar */
