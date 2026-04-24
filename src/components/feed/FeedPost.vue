@@ -11,7 +11,7 @@
     <div class="post-actions">
       <div class="post-action">❤️ {{ likes }}</div>
       <div class="post-action">💬 {{ comments }}</div>
-      <div class="post-action">↗️ Compartir</div>
+      <div class="post-action">↗️ Share</div>
     </div>
   </div>
 </template>

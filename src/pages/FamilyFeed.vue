@@ -1,29 +1,29 @@
 <template>
   <div class="family-feed-screen">
-    <h2>Feed Familiar</h2>
-    <p class="subtitle">Mantente conectado con las actualizaciones de tu familia</p>
+    <h2>Family Feed</h2>
+    <p class="subtitle">Stay connected with your family's updates</p>
 
     <FeedPost
       author="Roberto López"
       initials="RM"
-      time="Hace 2 horas"
-      content="Qué hermoso día con la familia en el parque. ¡Las tradiciones viven en nosotros! 🌳❤️"
+      time="2 hours ago"
+      content="What a beautiful day with the family at the park. Traditions live on in us! 🌳❤️"
       :likes="12"
       :comments="3"
     />
     <FeedPost
       author="Isabel García"
       initials="IG"
-      time="Hace 5 horas"
-      content="¡Cocinando la receta secreta de abuela María! Quien quiere venir a probar? 👩‍🍳"
+      time="5 hours ago"
+      content="Making grandmother Maria's secret recipe! Who wants to come try it? 👩‍🍳"
       :likes="28"
       :comments="8"
     />
     <FeedPost
       author="Laura López"
       initials="LL"
-      time="Ayer"
-      content="Mi día en la universidad. Estudiando duro para los exámenes finales. ¡Gracias familia por el apoyo! 📚"
+      time="Yesterday"
+      content="My day at university. Studying hard for final exams. Thank you family for the support! 📚"
       :likes="15"
       :comments="5"
     />

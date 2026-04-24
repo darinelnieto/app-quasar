@@ -1,43 +1,43 @@
 <template>
   <div class="family-tree-screen">
-    <h2>Árbol Familiar</h2>
-    <p class="subtitle">Visualiza y gestiona tu estructura familiar completa</p>
+    <h2>Family Tree</h2>
+    <p class="subtitle">View and manage your complete family structure</p>
 
     <div class="tree-container">
       <div style="text-align: center; margin-bottom: 24px;">
-        <div class="tree-node">👴 Abuelo Carlos</div>
-        <div class="tree-node">👵 Abuela María</div>
+        <div class="tree-node">👴 Grandfather Carlos</div>
+        <div class="tree-node">👵 Grandmother Maria</div>
       </div>
       <div style="text-align: center; margin-bottom: 24px;">
-        <div class="tree-node">👨 Papá Roberto</div>
-        <div class="tree-node">👩 Mamá Isabel</div>
+        <div class="tree-node">👨 Dad Roberto</div>
+        <div class="tree-node">👩 Mom Isabel</div>
       </div>
       <div style="text-align: center;">
-        <div class="tree-node tree-node-active">👤 Juan David (Tú)</div>
-        <div class="tree-node">👩 Hermana Laura</div>
-        <div class="tree-node">👦 Hermano Marco</div>
+        <div class="tree-node tree-node-active">👤 Juan David (You)</div>
+        <div class="tree-node">👩 Sister Laura</div>
+        <div class="tree-node">👦 Brother Marco</div>
       </div>
     </div>
 
-    <h3>Miembros Recientes</h3>
+    <h3>Recent Members</h3>
     <div class="card">
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
         <div>
           <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Roberto López</div>
-          <div style="font-size: 13px; color: #666666;">Padre • Perfil Completo</div>
+          <div style="font-size: 13px; color: #666666;">Father • Full Profile</div>
         </div>
         <div>
           <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Isabel García</div>
-          <div style="font-size: 13px; color: #666666;">Madre • Perfil Completo</div>
+          <div style="font-size: 13px; color: #666666;">Mother • Full Profile</div>
         </div>
         <div>
           <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Laura López</div>
-          <div style="font-size: 13px; color: #666666;">Hermana • Perfil Limitado</div>
+          <div style="font-size: 13px; color: #666666;">Sister • Limited Profile</div>
         </div>
       </div>
     </div>
 
-    <button class="btn btn-primary" style="margin-top: 16px;">Agregar Miembro Familiar</button>
+    <button class="btn btn-primary" style="margin-top: 16px;">Add Family Member</button>
   </div>
 </template>
 

@@ -1,48 +1,48 @@
 <template>
   <div class="chat-screen">
-    <h2>Mensajes Privados</h2>
+    <h2>Private Messages</h2>
 
     <div class="chat-container">
       <div class="chat-list">
         <div class="chat-item active">
           <div class="chat-name">Roberto López</div>
-          <div class="chat-preview">Nos vemos en la reunión familiar...</div>
+          <div class="chat-preview">See you at the family gathering...</div>
         </div>
         <div class="chat-item">
           <div class="chat-name">Isabel García</div>
-          <div class="chat-preview">¿Confirmas que vienes al almuerzo?</div>
+          <div class="chat-preview">Can you confirm you're coming to lunch?</div>
         </div>
         <div class="chat-item">
           <div class="chat-name">Laura López</div>
-          <div class="chat-preview">Hermano, necesito tu ayuda con algo...</div>
+          <div class="chat-preview">Brother, I need your help with something...</div>
         </div>
         <div class="chat-item">
-          <div class="chat-name">Grupo: Familia López</div>
-          <div class="chat-preview">Marco: ¿A qué hora es la cena?</div>
+          <div class="chat-name">Group: Lopez Family</div>
+          <div class="chat-preview">Marco: What time is dinner?</div>
         </div>
       </div>
 
       <div class="chat-window">
         <div class="messages">
           <div class="message received">
-            <div class="message-content">Hola Juan, ¿cómo estás?</div>
+            <div class="message-content">Hi Juan, how are you?</div>
           </div>
           <div class="message received">
-            <div class="message-content">Nos vemos en la reunión familiar el próximo sábado</div>
+            <div class="message-content">See you at the family gathering next Saturday</div>
           </div>
           <div class="message sent">
-            <div class="message-content">¡Perfecto! Llevo algo de comer</div>
+            <div class="message-content">Perfect! I'll bring something to eat</div>
           </div>
           <div class="message received">
-            <div class="message-content">Excelente, hazlo como siempre. ¡Te quiero!</div>
+            <div class="message-content">Great, make it like you always do. I love you!</div>
           </div>
           <div class="message sent">
-            <div class="message-content">¡Yo también papá! Nos vemos pronto</div>
+            <div class="message-content">I love you too dad! See you soon</div>
           </div>
         </div>
         <div class="message-input">
-          <input type="text" placeholder="Escribe tu mensaje..." />
-          <button class="btn btn-primary" style="width: auto;">Enviar</button>
+          <input type="text" placeholder="Type your message..." />
+          <button class="btn btn-primary" style="width: auto;">Send</button>
         </div>
       </div>
     </div>

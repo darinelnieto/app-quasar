@@ -1,33 +1,33 @@
 <template>
   <div class="journal-screen">
-    <h2>Mi Viaje</h2>
-    <p class="subtitle">Documenta tu historia con fotos, videos, notas y memorias de voz</p>
+    <h2>My Journey</h2>
+    <p class="subtitle">Document your story with photos, videos, notes, and voice memos</p>
 
-    <button class="btn btn-primary" style="margin-bottom: 24px;">+ Agregar Contenido</button>
+    <button class="btn btn-primary" style="margin-bottom: 24px;">+ Add Content</button>
 
     <TimelineEvent
       icon="📸"
-      title="Álbum: Vacaciones 2025"
-      description="24 fotos de nuestras vacaciones en Cartagena. Momentos inolvidables en familia."
-      date="15 de marzo, 2026"
+      title="Album: 2025 Vacation"
+      description="24 photos from our vacation in Cartagena. Unforgettable family moments."
+      date="March 15, 2026"
     />
     <TimelineEvent
       icon="🎙️"
-      title="Memo de Voz: Historias de la Infancia"
-      description="Recordando anécdotas de mis primeros años viviendo en Medellín."
-      date="8 de marzo, 2026"
+      title="Voice Memo: Childhood Stories"
+      description="Reminiscing about anecdotes from my early years living in Medellin."
+      date="March 8, 2026"
     />
     <TimelineEvent
       icon="📝"
-      title="Nota: Lecciones Aprendidas"
-      description="Reflexiones sobre la vida, el trabajo y la importancia de la familia."
-      date="1 de marzo, 2026"
+      title="Note: Lessons Learned"
+      description="Reflections on life, work, and the importance of family."
+      date="March 1, 2026"
     />
     <TimelineEvent
       icon="🎥"
-      title="Video: Un Día en mi Vida"
-      description="Video personal mostrando mi rutina diaria y lo que es importante para mí."
-      date="22 de febrero, 2026"
+      title="Video: A Day in My Life"
+      description="Personal video showing my daily routine and what matters to me."
+      date="February 22, 2026"
     />
   </div>
 </template>

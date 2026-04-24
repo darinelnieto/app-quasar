@@ -1,25 +1,25 @@
 <template>
   <div class="memory-tree-screen">
-    <h2>Árbol de Memoria</h2>
-    <p class="subtitle">Honra y recuerda a tus seres queridos que han partido</p>
+    <h2>Memory Tree</h2>
+    <p class="subtitle">Honor and remember your loved ones who have passed</p>
 
     <MemoryCard
-      name="Abuela María Elena López"
+      name="Grandmother Maria Elena López"
       dates="1945 - 2023"
-      description="Matriarca de la familia, amante de la cocina, las plantas y las historias. Su legado vive en cada reunión familiar."
-      :media="['📸 45 Fotos', '🎙️ 12 Audio', '📝 8 Notas']"
+      description="Family matriarch, lover of cooking, plants, and stories. Her legacy lives on in every family gathering."
+      :media="['📸 45 Photos', '🎙️ 12 Audio', '📝 8 Notes']"
     />
     <MemoryCard
-      name="Abuelo Carlos García"
+      name="Grandfather Carlos García"
       dates="1940 - 2020"
-      description="Hombre de principios, trabajador incansable. Sus enseñanzas sobre la vida guían nuestros pasos."
-      :media="['📸 38 Fotos', '🎥 5 Videos', '📝 10 Notas']"
+      description="Man of principles, tireless worker. His teachings about life guide our steps."
+      :media="['📸 38 Photos', '🎥 5 Videos', '📝 10 Notes']"
     />
     <MemoryCard
-      name="Tía Rosa María López"
+      name="Aunt Rosa Maria López"
       dates="1955 - 2022"
-      description="La tía bromista y cariñosa que siempre traía alegría a los encuentros familiares."
-      :media="['📸 22 Fotos', '🎙️ 6 Audio']"
+      description="The joking and caring aunt who always brought joy to family gatherings."
+      :media="['📸 22 Photos', '🎙️ 6 Audio']"
     />
   </div>
 </template>

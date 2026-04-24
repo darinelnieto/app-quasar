@@ -1,50 +1,50 @@
 <template>
   <aside class="sidebar">
     <div class="logo">
-      cas<span>lo</span>
+      Memory<span>Leaf</span>
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Principal</div>
+      <div class="nav-label">Main</div>
       <router-link to="/" class="nav-item" :class="{ active: $route.name === 'Dashboard' }">
         <span class="nav-icon">🏠</span>
         <span>Dashboard</span>
       </router-link>
       <router-link to="/profile" class="nav-item" :class="{ active: $route.name === 'Profile' }">
         <span class="nav-icon">👤</span>
-        <span>Mi Perfil</span>
+        <span>My Profile</span>
       </router-link>
       <router-link to="/family-tree" class="nav-item" :class="{ active: $route.name === 'FamilyTree' }">
         <span class="nav-icon">🌳</span>
-        <span>Árbol Familiar</span>
+        <span>Family Tree</span>
       </router-link>
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Contenido</div>
+      <div class="nav-label">Content</div>
       <router-link to="/journal" class="nav-item" :class="{ active: $route.name === 'Journal' }">
         <span class="nav-icon">📔</span>
-        <span>Mi Viaje</span>
+        <span>My Journey</span>
       </router-link>
       <router-link to="/family-feed" class="nav-item" :class="{ active: $route.name === 'FamilyFeed' }">
         <span class="nav-icon">📰</span>
-        <span>Feed Familiar</span>
+        <span>Family Feed</span>
       </router-link>
       <router-link to="/memory-tree" class="nav-item" :class="{ active: $route.name === 'MemoryTree' }">
         <span class="nav-icon">🕊️</span>
-        <span>Árbol de Memoria</span>
+        <span>Memory Tree</span>
       </router-link>
     </div>
 
     <div class="nav-section">
-      <div class="nav-label">Privado</div>
+      <div class="nav-label">Private</div>
       <router-link to="/vault" class="nav-item" :class="{ active: $route.name === 'Vault' }">
         <span class="nav-icon">🔐</span>
-        <span>Bóveda</span>
+        <span>Vault</span>
       </router-link>
       <router-link to="/chat" class="nav-item" :class="{ active: $route.name === 'Chat' }">
         <span class="nav-icon">💬</span>
-        <span>Mensajes</span>
+        <span>Messages</span>
       </router-link>
     </div>
   </aside>

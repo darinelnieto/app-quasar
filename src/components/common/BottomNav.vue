@@ -2,33 +2,33 @@
   <nav class="bottom-nav">
     <router-link to="/" class="nav-btn" :class="{ active: $route.name === 'Dashboard' }" title="Dashboard">
       <span class="icon">🏠</span>
-      <span class="label">Dashboard</span>
+      <span class="label">Home</span>
     </router-link>
-    <router-link to="/profile" class="nav-btn" :class="{ active: $route.name === 'Profile' }" title="Mi Perfil">
+    <router-link to="/profile" class="nav-btn" :class="{ active: $route.name === 'Profile' }" title="My Profile">
       <span class="icon">👤</span>
-      <span class="label">Perfil</span>
+      <span class="label">Profile</span>
     </router-link>
-    <router-link to="/family-tree" class="nav-btn" :class="{ active: $route.name === 'FamilyTree' }" title="Árbol Familiar">
+    <router-link to="/family-tree" class="nav-btn" :class="{ active: $route.name === 'FamilyTree' }" title="Family Tree">
       <span class="icon">🌳</span>
-      <span class="label">Árbol</span>
+      <span class="label">Tree</span>
     </router-link>
-    <router-link to="/journal" class="nav-btn" :class="{ active: $route.name === 'Journal' }" title="Mi Viaje">
+    <router-link to="/journal" class="nav-btn" :class="{ active: $route.name === 'Journal' }" title="My Journey">
       <span class="icon">📔</span>
-      <span class="label">Viaje</span>
+      <span class="label">Journey</span>
     </router-link>
-    <router-link to="/family-feed" class="nav-btn" :class="{ active: $route.name === 'FamilyFeed' }" title="Feed Familiar">
+    <router-link to="/family-feed" class="nav-btn" :class="{ active: $route.name === 'FamilyFeed' }" title="Family Feed">
       <span class="icon">📰</span>
       <span class="label">Feed</span>
     </router-link>
-    <router-link to="/memory-tree" class="nav-btn" :class="{ active: $route.name === 'MemoryTree' }" title="Árbol de Memoria">
+    <router-link to="/memory-tree" class="nav-btn" :class="{ active: $route.name === 'MemoryTree' }" title="Memory Tree">
       <span class="icon">🕊️</span>
-      <span class="label">Memoria</span>
+      <span class="label">Memory</span>
     </router-link>
-    <router-link to="/vault" class="nav-btn" :class="{ active: $route.name === 'Vault' }" title="Bóveda">
+    <router-link to="/vault" class="nav-btn" :class="{ active: $route.name === 'Vault' }" title="Vault">
       <span class="icon">🔐</span>
-      <span class="label">Bóveda</span>
+      <span class="label">Vault</span>
     </router-link>
-    <router-link to="/chat" class="nav-btn" :class="{ active: $route.name === 'Chat' }" title="Mensajes">
+    <router-link to="/chat" class="nav-btn" :class="{ active: $route.name === 'Chat' }" title="Messages">
       <span class="icon">💬</span>
       <span class="label">Chat</span>
     </router-link>

@@ -17,17 +17,17 @@ const route = useRoute()
 
 const screenTitles = {
   'Dashboard': 'Dashboard',
-  'Profile': 'Mi Perfil',
-  'FamilyTree': 'Árbol Familiar',
-  'Journal': 'Mi Viaje',
-  'FamilyFeed': 'Feed Familiar',
-  'MemoryTree': 'Árbol de Memoria',
-  'Vault': 'Bóveda',
-  'Chat': 'Mensajes'
+  'Profile': 'My Profile',
+  'FamilyTree': 'Family Tree',
+  'Journal': 'My Journey',
+  'FamilyFeed': 'Family Feed',
+  'MemoryTree': 'Memory Tree',
+  'Vault': 'Vault',
+  'Chat': 'Messages'
 }
 
 const screenTitle = computed(() => {
-  return screenTitles[route.name] || 'Caslo'
+  return screenTitles[route.name] || 'Memory Leaf'
 })
 </script>
 

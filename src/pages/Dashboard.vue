@@ -1,45 +1,45 @@
 <template>
   <div class="dashboard-screen">
     <div class="header">
-      <h2>Bienvenido, Juan</h2>
-      <p>Aquí está todo lo que necesitas saber sobre tu familia.</p>
+      <h2>Welcome, Juan</h2>
+      <p>Here's everything you need to know about your family.</p>
     </div>
 
     <div class="dashboard-grid">
       <DashboardCard
-        title="Actualizaciones Recientes"
-        description="María compartió 3 fotos nuevas"
+        title="Recent Updates"
+        description="Maria shared 3 new photos"
         icon="🎯"
       />
       <DashboardCard
-        title="Recordatorios"
-        description="Cumpleaños de Carlos en 5 días"
+        title="Reminders"
+        description="Carlos' birthday in 5 days"
         icon="🎂"
       />
       <DashboardCard
-        title="Mi Perfil"
-        description="Completa tu perfil familiar"
+        title="My Profile"
+        description="Complete your family profile"
         icon="📝"
       />
       <DashboardCard
-        title="Miembros Activos"
-        description="8 miembros conectados"
+        title="Active Members"
+        description="8 members online"
         icon="👥"
       />
     </div>
 
-    <h3>Próximos Eventos</h3>
+    <h3>Upcoming Events</h3>
     <TimelineEvent
       icon="🎂"
-      title="Cumpleaños de Carlos"
-      description="En 5 días - Carlos cumple 45 años"
-      date="28 de abril, 2026"
+      title="Carlos' Birthday"
+      description="In 5 days - Carlos turns 45"
+      date="April 28, 2026"
     />
     <TimelineEvent
       icon="👨‍👩‍👧‍👦"
-      title="Reunión Familiar"
-      description="Comida familiar en casa de los abuelos"
-      date="5 de mayo, 2026"
+      title="Family Gathering"
+      description="Family lunch at grandparents' house"
+      date="May 5, 2026"
     />
   </div>
 </template>

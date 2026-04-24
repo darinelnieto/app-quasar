@@ -1,15 +1,15 @@
 <template>
   <div class="vault-screen">
-    <h2>Bóveda - Mi Almacenamiento Privado</h2>
-    <p class="subtitle">Tus memorias seguras y privadas. Decide qué compartir con tu familia.</p>
+    <h2>Vault - My Private Storage</h2>
+    <p class="subtitle">Your safe and private memories. Decide what to share with your family.</p>
 
-    <button class="btn btn-primary" style="margin-bottom: 24px;">+ Subir Contenido</button>
+    <button class="btn btn-primary" style="margin-bottom: 24px;">+ Upload Content</button>
 
-    <h3>Contenido</h3>
+    <h3>Content</h3>
     <div class="vault-grid">
       <div class="vault-item">
         <div class="vault-icon">🖼️</div>
-        <div class="vault-label">120 Fotos</div>
+        <div class="vault-label">120 Photos</div>
       </div>
       <div class="vault-item">
         <div class="vault-icon">🎥</div>
@@ -21,18 +21,18 @@
       </div>
       <div class="vault-item">
         <div class="vault-icon">📄</div>
-        <div class="vault-label">18 Documentos</div>
+        <div class="vault-label">18 Documents</div>
       </div>
     </div>
 
-    <h3 style="margin-top: 24px;">Almacenamiento</h3>
+    <h3 style="margin-top: 24px;">Storage</h3>
     <div class="card">
       <div style="margin-bottom: 12px;">
-        <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Almacenamiento Usado</div>
+        <div style="font-weight: 600; color: #dcae45; margin-bottom: 4px;">Storage Used</div>
         <div style="width: 100%; height: 8px; background-color: rgba(220, 174, 69, 0.1); border-radius: 4px; overflow: hidden;">
           <div style="width: 65%; height: 100%; background: linear-gradient(90deg, #dcae45, #f0c777);"></div>
         </div>
-        <div style="font-size: 12px; color: #666666; margin-top: 4px;">650 MB de 1 GB disponible</div>
+        <div style="font-size: 12px; color: #666666; margin-top: 4px;">650 MB of 1 GB available</div>
       </div>
     </div>
   </div>

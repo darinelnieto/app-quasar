@@ -4,33 +4,33 @@
       <div class="profile-avatar">👤</div>
       <div class="profile-info">
         <div class="profile-name">Juan David López</div>
-        <div class="profile-role">Propietario • Cuenta Completa</div>
-        <div class="profile-bio">Apasionado por mantener viva la historia familiar y crear nuevas memorias con mis seres queridos.</div>
+        <div class="profile-role">Owner • Full Account</div>
+        <div class="profile-bio">Passionate about keeping family history alive and creating new memories with loved ones.</div>
         <div class="btn-group">
-          <button class="btn btn-primary">Editar Perfil</button>
-          <button class="btn btn-secondary">Añadir Información</button>
+          <button class="btn btn-primary">Edit Profile</button>
+          <button class="btn btn-secondary">Add Information</button>
         </div>
       </div>
     </div>
 
-    <h3>Mi Historia</h3>
+    <h3>My Story</h3>
     <TimelineEvent
       icon="📸"
-      title="Fotos: Vacaciones a Cartagena"
-      description="12 fotos compartidas"
-      date="15 de marzo, 2026"
+      title="Photos: Cartagena Vacation"
+      description="12 photos shared"
+      date="March 15, 2026"
     />
     <TimelineEvent
       icon="🎥"
-      title="Video: Recuerdos de la Infancia"
-      description="Video narrado de 5 minutos"
-      date="8 de marzo, 2026"
+      title="Video: Childhood Memories"
+      description="5-minute narrated video"
+      date="March 8, 2026"
     />
     <TimelineEvent
       icon="🎙️"
-      title="Audio Memo: Mi Carrera"
-      description="Memo de 3 minutos grabado"
-      date="1 de marzo, 2026"
+      title="Audio Memo: My Career"
+      description="3-minute recorded memo"
+      date="March 1, 2026"
     />
   </div>
 </template>
